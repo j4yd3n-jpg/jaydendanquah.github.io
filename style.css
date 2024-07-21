@@ -1,0 +1,140 @@
+/* button-styled links */
+a:link, a:visited {
+    border: 2px solid;
+    border-radius: 32px;
+    color: white;
+    padding: 12px 24px; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover {
+    background-color: rgb(233, 204, 228);
+    color: black;
+    text-decoration: underline;
+  }
+
+
+/* font styling for whole site */
+body {
+    font-family: 'Red Hat Display';
+    font-size: 18px;
+}
+
+/* section and main container styling */
+section {
+    height: 90vh;
+    position: relative;
+}
+
+.main-content {
+    align-items: center;
+    border: 2px solid;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: flex-start;
+    left: 0;
+    margin: auto;
+    max-width: 700px;
+    overflow-y: scroll;
+    padding: 16px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 100%;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 27px;
+    font-style: italic;
+}
+
+/* gradient background */
+html {
+    background: linear-gradient(45deg, #34F9EE, #f068ba);
+    background-repeat: repeat-y;
+    background-size: cover;
+    color: #FFFFFF;
+    height: 100%;
+    width: 100%;
+}
+
+/* for landing page only*/
+#landing {
+    justify-content: center;
+}
+
+/* navigation bar and links*/
+#navbar {
+    border: 2px solid;
+    border-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    left: 0;
+    margin: auto;
+    max-width: 700px;
+    overflow: auto;
+    width: 100%;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar li {
+    padding: 12px;
+}
+
+#navbar li a {
+    border: none;
+    border-radius: 0px;
+    padding: 0;
+}
+
+#navbar li a.active {
+    color: rgb(233, 204, 228);
+    text-decoration: underline;
+}
+
+#navbar li a:hover {
+    background-color: rgb(233, 204, 228);
+    color: black;
+    text-decoration: underline;
+}
+
+/* marquee */
+marquee {
+    border: 2px solid;
+    border-color: white;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: flex-start;
+    left: 0;
+    margin: auto;
+    max-width: 700px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.pdf {
+    height: 100%;
+    margin: auto;
+    padding: auto;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+}
