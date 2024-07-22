@@ -68,9 +68,14 @@ html {
     width: 100%;
 }
 
-/* for landing page only*/
-#landing {
+/* for landing and resume pages only*/
+#landing, #resume {
     justify-content: center;
+}
+
+iframe {
+    width: 660px;
+    height: calc(100vh - 60px);
 }
 
 /* navigation bar and links*/
@@ -131,10 +136,34 @@ marquee {
     width: 100%;
 }
 
-.pdf {
-    height: 100%;
-    margin: auto;
-    padding: auto;
-    width: 100%;
-    aspect-ratio: 4 / 3;
+/* Responsive adjustments */
+@media only screen and (max-width: 800px) {
+    body {
+        font-size: 16px;
+    }
+
+    .main-content {
+        padding: 4px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    iframe {
+        width: 600px;
+    }
+
+    #navbar li {
+        padding: 4px;
+    }
+
+    a:link, a:visited {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
 }
