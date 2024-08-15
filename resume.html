@@ -3,34 +3,33 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href='https://fonts.googleapis.com/css?family=Red Hat Display' rel='stylesheet'>
         <link rel="stylesheet" href="style.css">
-        <title>My Resume | Jayden Danquah </title>
+        <title>My Resume | Jayden Danquah</title>
     </head>
 
     <body>
-        <section>
-            <nav>
-                <div id="navbar">
-                    <ul>
-                        <li><a href="home.html">Home Page</a></li>
-                        <li><a href="about.html">My Story</a></li>
-                        <li><a class="active" href="resume.html">My Resume</a></li>
-                        <li><a href="certs.html">My Certifications</a></li>
-                    </ul>
-                </div>
+        <div id="container">
+            <nav id="navbar">
+                <ul>
+                    <li><a href="home.html">Home Page</a></li>
+                    <li><a href="about.html">My Story</a></li>
+                    <li><a class="active" href="resume.html">My Resume</a></li>
+                    <li><a href="certs.html">My Certifications</a></li>
+                </ul>
             </nav>
 
-            <div class="main-content" id="resume">
-                <h1>My Resume</h1>
-
-                <iframe class="pdf" src="https://drive.google.com/file/d/17gZY98CoA7xUFf48rheb7XCM87SmDrik/preview" width="660" height="auto">Link to PDF file of resume</iframe>
+            <div id="flex">
+                <main>
+                    <h1>My Resume</h1>
+                    <iframe class="pdf" src="https://drive.google.com/file/d/17gZY98CoA7xUFf48rheb7XCM87SmDrik/preview" width="660" height="auto">Link to PDF file of resume</iframe>
+                </main>
             </div>
-        </section>
 
-        <marquee width="60%" direction="left" height="100px">
-            © 2024 by Jayden Danquah.
-        </marquee>
+            <footer>
+                <marquee width="100%" direction="left" height="100px">
+                    © 2024 by Jayden Danquah.
+                </marquee>
+            </footer>
+        </div>
     </body>
 </html>
