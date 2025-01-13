@@ -20,8 +20,7 @@ html, body {
 
 body {
     align-items: center;
-    background: linear-gradient(45deg, #34F9EE, #f068ba);
-    background-repeat: repeat-y;
+    background: radial-gradient(#3b298b, #000000);
     background-size: cover;
     color: #FFFFFF;
     display: flex;
@@ -63,7 +62,6 @@ h2 {
     padding: 20px;
     position: absolute;
     right: 0;
-    text-align: center;
     top: 0;
     width: 100%;
 }
@@ -80,15 +78,17 @@ a:link, a:visited {
 }
 
 a:hover {
-    background-color: rgb(233, 204, 228);
-    color: black;
+    background-color: black;
+    border-color: black;
+    color: #3b298b;
     text-decoration: underline;
   }
 
 
 /* navigation bar */
 #navbar {
-    border: 2px solid white;
+    background-color: rgba(255,255,255,0.25);
+    border: 4px double white;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -122,26 +122,30 @@ a:hover {
 
 /* formats active navbar links */
 #navbar li a.active {
-    color: rgb(233, 204, 228);
+    color: #a194da;
     text-decoration: underline;
 }
 
 /* hovering effect for navbar links */
 #navbar li a:hover {
-    background-color: rgb(233, 204, 228);
-    color: black;
+    background-color: #3b298b;
+    color: white;
     text-decoration: underline;
 }
 
 #flex {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 /* main page content */
 main {
     align-items: center;
-    border: 2px solid white;
+    background-color: rgba(255,255,255,0.25);
+    border: 4px double white;
     display: flex;
     flex-direction: column;
     height: 70vh;
@@ -159,12 +163,67 @@ iframe {
 }
 
 footer {
-    border: 2px solid white;
+    background-color: rgba(255,255,255,0.25);
+    border: 4px double white;
     height: 40px;
     margin-top: 10px;
     padding: 10px;
     text-align: center;
     width: 100%;
+}
+
+/* image gallery 
+.gallery-item {
+    border: 2px solid black;
+    display: inline-block;
+    height: 200px;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    width: calc(50% - 20px);
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item a {
+    border: none;
+    border-radius: 0px;
+    padding: 0;
+}
+
+.gallery-item .description {
+    align-items: center;
+    background-color: rgba(161, 148, 218, 0.7);
+    box-sizing: border-box;
+    color: black;
+    display: flex;
+    font-size: 16px;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    transition: opacity 0.3s ease;
+    width: 100%;
+}
+*/
+
+/* reduces image visibility when hovering */
+.gallery-item:hover img {
+    opacity: 0.3;
+}
+
+/* ensures image description can be seen */
+.gallery-item:hover .description {
+    opacity: 1;
 }
 
 /* responsive adjustments */
