@@ -19,6 +19,11 @@ document.addEventListener("DOMContentLoaded", () => {
         span.style.setProperty('--i', index); // set --i property for animation duration
         particlesContainer.appendChild(span); // append <span> to container
     });
+
+    // delay after every 10 particles to avoid performance issues
+    if (i % 10 === 0) {
+        setTimeout(() => createParticles(), 10);
+    }
 });
 
 /* 
