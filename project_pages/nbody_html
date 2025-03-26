@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>N-Body Simulator | Jayden Danquah</title>
+        <link rel="stylesheet" href="/style.css">
+        <meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <style>
+        html, body { background: none; }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            overflow-y: scroll;
+            width: 100%;
+        }
+    </style>
+
+    <body>
+        <p>Project information coming soon!</p>
+
+        <video width="640" height="480" autoplay>
+            <source src="/media/N-Body Simulator.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video> 
+    </body>
+</html>
