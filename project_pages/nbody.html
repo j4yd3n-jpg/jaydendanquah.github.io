@@ -1,29 +1,39 @@
 <!DOCTYPE html>
+
 <html lang="en-US">
     <head>
-        <title>N-Body Simulator | Jayden Danquah</title>
-        <link rel="stylesheet" href="/jaydendanquah.github.io/style.css">
+        <title>N-Body Simulation | Jayden Danquah</title>
+        <link rel="stylesheet" href="/style.css">
         <meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1.0">
     </head>
 
     <style>
-        html, body { background: none; }
-
-        body {
-            display: flex;
-            flex-direction: column;
+        html, body { 
+            background: none;
             margin: 0;
             padding: 0;
             width: 100%;
         }
+
+        body {
+            display: block;
+            margin: auto;
+        }
+
+        h1, p { margin: 1rem 0; }
     </style>
 
     <body>
-        <h1>N-Body Simulator</h1>
-        <video width="640" height="480" autoplay muted loop>
-            <source src="/jaydendanquah.github.io/media/N-Body Simulator.mp4" type="video/mp4">
+        <h1>N-Body Simulation</h1>
+        <h2>Coded in C++</h2>
+        <video width="480" height="360" autoplay muted loop>
+            <source src="/media/N-Body Simulator.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        <p>Project information coming soon!</p>
+        <p>For one of my school assignments, I was tasked with creating an N-body simulation, animating a system of particles themed after the planets in the solar system and under the influence of mutual gravitational forces. The assignment consisted of two parts; I first loaded a static image of my simulation based on an input file containing data such as the size and radius of the mock system, along with the position, velocity and GIF files for each of the planets included. The second part of the assignment focused on incorporating the actual physics and animation.</p>
+
+        <p>My implementation involved creating two classes named <i>CelestialBody</i> and <i>Universe</i>. The CelestialBody class includes variables and functions that retrieve the GIF files associated with the planet names passed into the object, insert them into a sprite, and render them to the window. Accessor and mutator functions were developed for both classes' overloaded operators, parsing in the planet's coordinates and filenames for easier access when coding each class's drawing function. The Universe class assembles a vector of CelestialBody objects, which is used to output data from the input file to the terminal while also enabling the display of each planet on the screen.</p>
+
+        <p>To introduce real-time motion into the simulation in the second part of the assignment, the CelestialBody class was updated to include methods of tracking the velocity and position of each planet, with the visual representation of the planets on screen adjusted by flipping the y-coordinate, taking into account the coordinate system used by the SFML library. In the Universe class, a newly added function iterates over every possible pair of planets in the vector, calculates their gravitational force and distance based on the pairwise formula, and subsequently updates their positions and velocities. For extra credit, I added an elapsed time counter to the top left corner of the screen.</p>
     </body>
 </html>
