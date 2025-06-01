@@ -41,11 +41,13 @@
 
 #flex {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-wrap: nowrap;
     gap: 10px;
+    height: 70vh;
+    justify-content: space-between;
     margin: 0 auto;
     max-width: 1000px;
+    overflow: hidden;
 }
 
 /* sidebar */
@@ -64,20 +66,19 @@ aside {
 
 /* main content */
 main {
+    display: block;
     flex: 1;
+    height: 100%;
     max-width: 1000px;
-    min-height: 60vh;
+    max-height: 70vh;
     order: 2;
     padding: 0;
 }
 
-/* iframe for importing blog posts */
+/* iframe for importing project posts */
 iframe {
     border: none;
-    display: block;
-    height: 100%;
-    min-height: 450px;
-    overflow-y: scroll;
+    height: 170vh;
     width: 100%;
 }
 
