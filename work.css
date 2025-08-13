@@ -78,7 +78,7 @@ main {
 /* iframe for importing project posts */
 iframe {
     border: none;
-    height: 170vh;
+    height: 135vh;
     width: 100%;
 }
 
@@ -101,6 +101,10 @@ footer {
         align-items: center;
         flex-direction: column; 
         gap: 10px;
+    }
+
+    iframe {
+        height: 150vh;
     }
 
     aside, main { width: 100%; }
