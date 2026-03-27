@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+    <head>
+        <title>DNA String Alignment | Jayden Danquah</title>
+        <link rel="stylesheet" href="/style.css">
+        <meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <style>
+        html, body { 
+            background: none;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+
+        body {
+            display: block;
+            margin: auto;
+        }
+
+        h1, p { margin: 1rem 0; }
+    </style>
+
+    <body>
+        <h1>DNA String Alignment</h1>
+        <h2>Coded in C++</h2>
+        <p>This assignment focused on writing a program to compute the optimal alignment of two DNA strings from an input file. It introduced key ideas from computational biology, where computers are used to analyze biological data, as well as dynamic programming—a technique that solves complex problems by breaking them into smaller, manageable subproblems. Pair programming was encouraged to support collaboration and problem-solving.</p>
+      <p>To implement the solution, I used a two-dimensional matrix to store edit distances between the two strings. Each cell represented the cost of aligning substrings, and the matrix was filled using recurrence relations that determined the cheapest operation: insertion, deletion, or substitution. After filling the matrix, I traced back through it to build the optimal alignment, checking for matches, mismatches, and gaps. I also developed helper functions to calculate penalties, find minimum values, and construct the alignment. One issue I encountered was that the output appeared reversed due to the direction of traversal, which I fixed by reversing the result before printing.</p>
+      <p>Overall, this assignment helped me better understand dynamic programming and how it can simplify complex computations. It also gave me insight into how programming techniques are applied in fields like healthcare and biology, reinforcing my interest in the intersection of technology and science.</p>
+    </body>
+</html>
