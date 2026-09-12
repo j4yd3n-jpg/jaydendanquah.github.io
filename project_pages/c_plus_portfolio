@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+    <head>
+        <title>C++ Programming Demos | Jayden Danquah</title>
+        <link rel="stylesheet" href="/style.css">
+        <meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <style>
+        html, body { 
+            background: none;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+
+        body {
+            display: block;
+            margin: auto;
+        }
+
+        h1, p { margin: 1rem 0; }
+    </style>
+
+    <body>
+        <h1>C++ Programming Demos</h1>
+        <h2>Download full portfolio here!</h2>
+        <p>Below is a selection of programming assignments that I completed as part of my advanced C++ programming course.</p>
+
+        <h3>N-Body Simulator</h3>
+        <video width="480" height="360" autoplay muted loop>
+        <source src="/media/N-Body Simulator.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p>I developed an N-body simulation that animates a system of particles inspired by the planets in the solar system, all interacting through mutual gravitational forces. The project had two stages: the first displayed a static scene generated from an input file containing details like the system's size, the planets' initial positions and velocities, and the images used to represent each planet. The second stage added realistic physics and animation.</p>
+    <p>In the completed version, the simulation tracks each planet's position and velocity over time, adjusting their on-screen movement to account for the coordinate system of the graphics library. At every time step, the program calculates the gravitational forces between each pair of planets, updates their trajectories accordingly, and redraws the system to show the evolving motion. As an extra feature, an elapsed time counter appears in the corner of the screen.</p>
+
+        <h3>DNA String Alignment</h3>
+        <video width="480" height="360" autoplay muted loop>
+        <source src="/media/DNA.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p>This program computes the optimal alignment of two DNA strings from an input file. It introduced key ideas from computational biology, where computers are used to analyze biological data, as well as dynamic programming—a technique that solves complex problems by breaking them into smaller, manageable subproblems. Pair programming was encouraged to support collaboration and problem-solving.</p>
+      <p>To implement the solution, I used a two-dimensional matrix to store edit distances between the two strings. Each cell represented the cost of aligning substrings, and the matrix was filled using recurrence relations that determined the cheapest operation: insertion, deletion, or substitution. After filling the matrix, I traced back through it to build the optimal alignment, checking for matches, mismatches, and gaps. I also developed helper functions to calculate penalties, find minimum values, and construct the alignment. One issue I encountered was that the output appeared reversed due to the direction of traversal, which I fixed by reversing the result before printing.</p>
+      <p>Overall, this assignment helped me better understand dynamic programming and how it can simplify complex computations. It also gave me insight into how programming techniques are applied in fields like healthcare and biology, reinforcing my interest in the intersection of technology and science.</p>
+
+        <h3>Sokoban</h3>
+        <video width="480" height="360" autoplay muted loop>
+        <source src="/media/Sokoban.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p>This is a recreation of Sokoban, a Japanese tile-based puzzle game where the player moves objects into designated locations. The project was divided into two parts: the first involved building a static visual representation of the game’s levels, and the second added the interactive game mechanics.</p>
+        <p>I structured the project in stages, starting with the display of the game environment and then layering in the interactive elements. Along the way, I experimented with different ways of organizing and displaying the visual components before settling on an approach that worked well. Small features were also added to enhance the overall experience.</p>
+        <p>This was one of my favorite assignments because it marked the first time I coded a game in C/C++. It drew on concepts I had learned in earlier projects, such as loading textures and rendering graphics, but expanded into the challenge of managing interactivity and movement. The process was both challenging and rewarding, sparking my curiosity about how similar games are built using C/C++.</p>
+    </body>
+</html>
