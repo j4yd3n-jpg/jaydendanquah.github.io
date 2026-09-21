@@ -1,2 +1,1 @@
-👨🏿‍💻 source code for my online portfolio
-- originally written in visual studio code
+👨🏿‍💻 source code and configuration files for my online portfolio; originally uploaded from VS code
